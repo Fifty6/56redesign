@@ -49,21 +49,21 @@ p {
 
 .project-container:nth-of-type(2) .project-img:first-of-type{
 	width: 100%;
-	margin-bottom: 100px;
+	margin-bottom: 10vw;
 	opacity: 1;
 	box-shadow: 10px 10px 100px 5px #606060;
 }
 
 .project-container:last-of-type .project-img:first-of-type{
 	width: 100%;
-	margin-bottom: 100px;
+	margin-bottom: 10vw;
 	opacity: 1;
 	box-shadow: 10px 10px 100px 5px #606060;
 }
 
 .project-img {
 	width: 100%;
-	margin-bottom: 100px;
+	margin: 10vw 0;
 	opacity: 0;
 	box-shadow: 10px 10px 100px 5px #606060;
 }
@@ -98,37 +98,36 @@ p {
 	position: relative;
 }
 
+
+nav {
+	position: fixed;
+	-ms-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	 transform: rotate(-90deg);
+	width: 300px;
+	height:100px;
+	z-index: 565656;
+	bottom: 150px;
+	left: -50px;
+}
+
 .work {
-	position: fixed;
-	font-family: 'America XIX';
-	font-size: 24pt;
-
-	-ms-transform: rotate(-90deg); /* IE 9 */
-    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-    transform: rotate(-90deg);
-
-
-	width: 100px;
-	left: 20px;
-	bottom: 250px;
-	z-index: 565656;
+	margin-left: 50px;
 }
 
-.info {
-	position: fixed;
+.nav-item {
+	border-bottom: 0px solid black;
 	font-family: 'America XIX';
-	font-size: 24pt;
-
-	-ms-transform: rotate(-90deg); /* IE 9 */
-    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-    transform: rotate(-90deg);
-
-
-	width: 100px;
-	left: 20px;
-	bottom: 100px;
-	z-index: 565656;
+	font-size:20px;
+	padding-bottom:3px;
+	display:inline-block;
+	cursor: pointer;
 }
+
+.nav-item:hover {
+	border-bottom: 1px solid black;
+}
+
 
 ::-webkit-scrollbar { 
     /*display: none; */

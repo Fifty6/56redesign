@@ -119,9 +119,9 @@ function handleOpacity (e){
 
     for (var i = 1; i < HTMLProjects.length; i++){
     	for (var j = 0; j < HTMLProjects[i].getImages().length; j++){
-    		if (lastScroll <  HTMLProjects[i].getImages()[j].offset().top - HTMLProjects[i].getImages()[j].height() &&
-    			scroll > HTMLProjects[i].getImages()[j].offset().top - HTMLProjects[i].getImages()[j].height()) {
-    				HTMLProjects[i].getImages()[j].animate({opacity: 1}, 1500);
+    		if (lastScroll <  HTMLProjects[i].getImages()[j].offset().top - 100 - HTMLProjects[i].getImages()[j].height() &&
+    			scroll > HTMLProjects[i].getImages()[j].offset().top - 100 - HTMLProjects[i].getImages()[j].height()) {
+    				HTMLProjects[i].getImages()[j].animate({opacity: 1}, 150);
     				return;
 			}
     	}
