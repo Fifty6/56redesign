@@ -163,4 +163,11 @@ function main(){
 	$("body").css('background-color' , HTMLProjects[1].getColour());
 	$(window).scrollTop(HTMLProjects[0].getHeight());
 
+    var aboutOverlay = $('#about-overlay'),
+        aboutClose = $('#about-close'),
+        info = $('.info');
+
+    info.click(function(){
+        aboutOverlay.fadeIn(200);
+    });
 }

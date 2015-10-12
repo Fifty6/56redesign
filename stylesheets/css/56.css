@@ -167,6 +167,52 @@ aside {
 	font-size: 12px;
 }
 
+#about-overlay {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);
+	z-index:565657;
+	display: none;
+	top: 0;
+	lefT: 0;
+	text-align: center;
+	overflow: scroll;
+}
+
+#about-close {
+	height: 100px;
+	width: 100px;
+}
+
+#about-wrap {
+	text-align: left;
+	display:inline-block;
+	max-width: 900px;
+	margin: auto 50px;
+	font-size: 60px;
+	color: white;
+	line-height: 140%;
+}
+
+#about-wrap span {
+	font-family: 'America XIX';
+}
+
+#about-wrap p a {
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+.stop-scroll {
+	overflow: hidden;
+}
+/*
+.blur {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}*/
+
 @media screen and (max-height: 550px) {
 	#talk2us{
 		display: none;
