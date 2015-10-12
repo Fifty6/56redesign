@@ -82,6 +82,7 @@ a {
 	width: 100%;
 	margin: 10vw 0;
 	opacity: 1;
+	cursor: zoom-in;
 	/*box-shadow: 10px 10px 100px 5px #606060;*/
 }
 
@@ -160,6 +161,28 @@ aside {
 	right: 35px;
 	text-align: right;
 	line-height: 160%;
+}
+
+#lightbox {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:565657;
+	display: none;
+}
+
+#view-img {
+	height: 50vw;
+	width: 80vw;
+	background-color: white;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%,-50%);
 }
 
 @media screen and (max-height: 550px) {
