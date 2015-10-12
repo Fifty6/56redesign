@@ -139,18 +139,33 @@ nav {
 }
 
 aside {
+	font-family: 'Work Sans';
+	z-index: 565656;
+}
+
+#communications {
 	width: 500px;
 	-ms-transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 	 transform: rotate(90deg);
-	 z-index: 565656;
-	 position: fixed;
-	 top: 275px;
-	 right:-205px;
+	position: fixed;
+	top: 275px;
+	right:-205px;
 }
 
-#communications {
-	font-family: 'Work Sans';
+#talk2us {
+	width: 200px;
+	position: fixed;
+	bottom: 30px;
+	right: 35px;
+	text-align: right;
+	line-height: 160%;
+}
+
+@media screen and (max-height: 550px) {
+	#talk2us{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 900px) {
