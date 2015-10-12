@@ -162,4 +162,19 @@ function main(){
 	HTMLProjects[1].setFocus(true);
 	$("body").css('background-color' , HTMLProjects[1].getColour());
 	$(window).scrollTop(HTMLProjects[0].getHeight());
+
+    var lightbox = $('#lightbox'),
+        viewimg = $('#view-img'),
+        projectImg = $('.project-img');
+
+    projectImg.click(function(){
+        lightbox.fadeIn(200);
+        var imgbg = $(this).attr('src');
+        viewimg.css('background-image', 'url(' + imgbg + ')');
+    });
+
+    lightbox.click(function(){
+        $(this).fadeOut(200);
+    });
+
 }

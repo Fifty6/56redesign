@@ -29,8 +29,3 @@ function Project(project){
 		return this.images;
 	}
 }
-
-$('.project-img').on('click',function(){
-    $('#lightbox').fadeIn(200);
-    alert('pussy');
-});
