@@ -64,7 +64,7 @@ p {
 .project-img {
 	width: 100%;
 	margin: 10vw 0;
-	opacity: 0;
+	opacity: 1;
 	box-shadow: 10px 10px 100px 5px #606060;
 }
 

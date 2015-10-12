@@ -121,7 +121,7 @@ function handleOpacity (e){
     	for (var j = 0; j < HTMLProjects[i].getImages().length; j++){
     		if (lastScroll <  HTMLProjects[i].getImages()[j].offset().top - 100 - HTMLProjects[i].getImages()[j].height() &&
     			scroll > HTMLProjects[i].getImages()[j].offset().top - 100 - HTMLProjects[i].getImages()[j].height()) {
-    				HTMLProjects[i].getImages()[j].animate({opacity: 1}, 150);
+    				HTMLProjects[i].getImages()[j].animate({opacity: 1}, 750);
     				return;
 			}
     	}
