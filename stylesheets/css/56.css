@@ -9,7 +9,6 @@ h1 {
 	font-family: 'America XIX';
 	font-size: 24pt;
 	font-weight: normal;
-	line-height: 24pt;
 }
 
 body {
@@ -25,7 +24,18 @@ body {
 }
 
 p {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	padding-bottom: 2px;
+	color: black;
+}
+
+.scrolling-content {
+	text-align: center;
 }
 
 .logo{
@@ -38,27 +48,34 @@ p {
 
 .project-container {
 	position: relative;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	font-size: 8pt;
+	margin-bottom:10vw;
 	line-height: 18px;
 	/*height: 100%;*/
-	width: 70%;
-	margin-left: 15%;
+	max-width: 700px;
+	display:inline-block;
+	margin: 0 120px;
+	text-align: left;
 	/*padding: 10%;*/
 }
 
+.project-container .project-img:first-of-type {
+	margin-top: 70px;
+}
+
+.project-container .project-img:last-of-type {
+	margin-bottom: 20vw;
+}
+
 .project-container:nth-of-type(2) .project-img:first-of-type{
-	width: 100%;
 	margin-bottom: 10vw;
 	opacity: 1;
-	box-shadow: 10px 10px 100px 5px #606060;
 }
 
 .project-container:last-of-type .project-img:first-of-type{
-	width: 100%;
 	margin-bottom: 10vw;
 	opacity: 1;
-	box-shadow: 10px 10px 100px 5px #606060;
 }
 
 .project-img {
@@ -70,28 +87,27 @@ p {
 
 .project-title {
 	position: relative;
-	padding-top: 100px;
-	line-height: 24pt;
+	padding-top: 50px;
+	line-height: 250%;
 }
 
 .project-title .title {
 	position: relative;
 	font-family: 'America XIX';
-	font-size: 24pt;
+	font-size: 14px;
 }
 
 .project-title .subtitle {
 	position: relative;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 24pt;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
 }
 
 .project-description {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'America XIX';
 	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	font-size: 18pt;
+	padding-top: 25px;
+	font-size: 14px;
 }
 
 .project-date {
@@ -101,14 +117,12 @@ p {
 
 nav {
 	position: fixed;
-	-ms-transform: rotate(-90deg);
+/*	-ms-transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
-	 transform: rotate(-90deg);
-	width: 300px;
-	height:100px;
+	 transform: rotate(-90deg);*/
 	z-index: 565656;
-	bottom: 150px;
-	left: -50px;
+	bottom: 20px;
+	left: 20px;
 }
 
 .work {
@@ -117,7 +131,7 @@ nav {
 
 .nav-item {
 	border-bottom: 0px solid black;
-	font-family: 'America XIX';
+	font-family: 'Work Sans';
 	font-size:20px;
 	padding-bottom:3px;
 	display:inline-block;

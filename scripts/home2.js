@@ -162,7 +162,4 @@ function main(){
 	HTMLProjects[1].setFocus(true);
 	$("body").css('background-color' , HTMLProjects[1].getColour());
 	$(window).scrollTop(HTMLProjects[0].getHeight());
-
-	$(".work").html('Work');
-	$(".info").html('Info');
 }
