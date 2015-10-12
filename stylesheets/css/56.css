@@ -40,9 +40,9 @@ a {
 
 .logo{
 	position: fixed;
-	width: 100px;
+	width: 80px;
 	left: 20px;
-	top: 0px;
+	top: 20px;
 	z-index: 565656;
 }
 
@@ -61,7 +61,7 @@ a {
 }
 
 .project-container .project-img:first-of-type {
-	margin-top: 70px;
+	margin-top: 50px;
 }
 
 .project-container .project-img:last-of-type {
@@ -82,7 +82,7 @@ a {
 	width: 100%;
 	margin: 10vw 0;
 	opacity: 1;
-	box-shadow: 10px 10px 100px 5px #606060;
+	/*box-shadow: 10px 10px 100px 5px #606060;*/
 }
 
 .project-title {
@@ -94,20 +94,20 @@ a {
 .project-title .title {
 	position: relative;
 	font-family: 'America XIX';
-	font-size: 14px;
+	font-size: 19px;
 }
 
 .project-title .subtitle {
 	position: relative;
 	font-family: 'Work Sans', sans-serif;
-	font-size: 14px;
+	font-size: 19px;
 }
 
 .project-description {
 	font-family: 'America XIX';
 	position: relative;
 	padding-top: 25px;
-	font-size: 14px;
+	font-size: 19px;
 }
 
 .project-date {
@@ -122,7 +122,7 @@ nav {
 	 transform: rotate(-90deg);*/
 	z-index: 565656;
 	bottom: 20px;
-	left: 20px;
+	left: 25px;
 }
 
 .work {
@@ -132,7 +132,7 @@ nav {
 .nav-item {
 	border-bottom: 0px solid black;
 	font-family: 'Work Sans';
-	font-size:20px;
+	font-size:35px;
 	padding-bottom:3px;
 	display:inline-block;
 	cursor: pointer;
@@ -140,6 +140,21 @@ nav {
 
 .nav-item:hover {
 	border-bottom: 1px solid black;
+}
+
+aside {
+	width: 500px;
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	 transform: rotate(90deg);
+	 z-index: 565656;
+	 position: fixed;
+	 top: 275px;
+	 right:-205px;
+}
+
+#communications {
+	font-family: 'Work Sans';
 }
 
 

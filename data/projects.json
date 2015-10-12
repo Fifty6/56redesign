@@ -4,16 +4,16 @@
             "title": "Kid. Studio",
             "subtitle": "Revamped portfolio site built for Toronto-based film & design studio Kid.",
             "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
-            "colour" : "#EBEAC0",
+            "colour" : "#E2e2e2",
             "images": [
                 {
-                    "url" : "assets/kid3.png"
+                    "url" : "assets/kid/kid1.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid2.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -24,10 +24,10 @@
             "colour" : "#C9D3F2",
             "images": [
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -39,10 +39,10 @@
             "colour" : "#F2CCC9",
             "images": [
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -53,10 +53,10 @@
             "colour" : "#D2F2C9",
             "images": [
                 {
-                    "url" : "assets/kid3.png"
+                    "url" : "assets/kid/kid3.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -67,10 +67,10 @@
             "colour" : "#F2CCC9",
             "images": [
                 {
-                    "url" : "assets/kid2.png"
+                    "url" : "assets/kid/kid2.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -81,10 +81,10 @@
             "colour" : "#C9D3F2",
             "images": [
                 {
-                    "url" : "assets/kid2.png"
+                    "url" : "assets/kid/kid2.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -95,10 +95,10 @@
             "colour" : "#EBEAC0",
             "images": [
                 {
-                    "url" : "assets/kid2.png"
+                    "url" : "assets/kid/kid2.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -109,13 +109,13 @@
             "colour" : "#D2F2C9",
             "images": [
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 },
                 {
-                    "url" : "assets/kid.png"
+                    "url" : "assets/kid/kid.png"
                 }
             ]
         }
