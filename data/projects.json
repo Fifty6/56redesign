@@ -11,9 +11,6 @@
                 },
                 {
                     "url" : "assets/kid/kid2.png"
-                },
-                {
-                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -36,7 +33,7 @@
             "subtitle": "Revamped portfolio site built for Toronto-based film and design stupid Kid.",
             "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
             "date": "example glossary",
-            "colour" : "#F2CCC9",
+            "colour" : "#ff0000",
             "images": [
                 {
                     "url" : "assets/kid/kid.png"
