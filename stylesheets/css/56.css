@@ -1,0 +1,135 @@
+@import "http://webfonts.ru/import/america.css";
+body, html {
+	margin:0;
+	height: 100%;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'America XIX';
+	font-size: 24pt;
+	font-weight: normal;
+	line-height: 24pt;
+}
+
+body {
+	-webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+* {
+	/*border: dotted #000000 2px;*/
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+	position: fixed;
+	width: 100px;
+	left: 20px;
+	top: 0px;
+	z-index: 565656;
+}
+
+.project-container {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 8pt;
+	line-height: 18px;
+	/*height: 100%;*/
+	width: 70%;
+	margin-left: 15%;
+	/*padding: 10%;*/
+}
+
+.project-container:nth-of-type(2) .project-img:first-of-type{
+	width: 100%;
+	margin-bottom: 100px;
+	opacity: 1;
+	box-shadow: 10px 10px 100px 5px #606060;
+}
+
+.project-container:last-of-type .project-img:first-of-type{
+	width: 100%;
+	margin-bottom: 100px;
+	opacity: 1;
+	box-shadow: 10px 10px 100px 5px #606060;
+}
+
+.project-img {
+	width: 100%;
+	margin-bottom: 100px;
+	opacity: 0;
+	box-shadow: 10px 10px 100px 5px #606060;
+}
+
+.project-title {
+	position: relative;
+	padding-top: 100px;
+	line-height: 24pt;
+}
+
+.project-title .title {
+	position: relative;
+	font-family: 'America XIX';
+	font-size: 24pt;
+}
+
+.project-title .subtitle {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24pt;
+}
+
+.project-description {
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 18pt;
+}
+
+.project-date {
+	position: relative;
+}
+
+.work {
+	position: fixed;
+	font-family: 'America XIX';
+	font-size: 24pt;
+
+	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+
+
+	width: 100px;
+	left: 20px;
+	bottom: 250px;
+	z-index: 565656;
+}
+
+.info {
+	position: fixed;
+	font-family: 'America XIX';
+	font-size: 24pt;
+
+	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+
+
+	width: 100px;
+	left: 20px;
+	bottom: 100px;
+	z-index: 565656;
+}
+
+::-webkit-scrollbar { 
+    /*display: none; */
+}
