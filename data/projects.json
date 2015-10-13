@@ -5,13 +5,29 @@
             "subtitle": "Portfolio site built for film and design studio Kid. With customizable content management made on top of Kirby. ",
             "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
             "bgcolour" : "#E2e2e2",
-            "textcolour" : "black",
+            "textcolour" : "#2e2e2e",
             "images": [
                 {
                     "url" : "assets/kid/kid1.png"
                 },
                 {
                     "url" : "assets/kid/kid2.png"
+                }
+            ]
+        },
+        {
+            "title": "Kastor & Pollux",
+            "subtitle": "Website designed and developed for creative collective Kastor and Pollux to showcase their work. ",
+            "description": "<a href='http://kastorandpollux.com/'>kastorandpollux.com</a>",
+            "date": "example glossary",
+            "bgcolour" : "#f3ec7d",
+            "textcolour" : "#061351",
+            "images": [
+                {
+                    "url" : "assets/kid/kid.png"
+                },
+                {
+                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -31,22 +47,6 @@
             ]
         },
         {
-            "title": "Kastor & Pollux",
-            "subtitle": "Website designed and developed for creative collective Kastor and Pollux to showcase their work. ",
-            "description": "<a href='http://kastorandpollux.com/'>kastorandpollux.com</a>",
-            "date": "example glossary",
-            "bgcolour" : "cyan",
-            "textcolour" : "black",
-            "images": [
-                {
-                    "url" : "assets/kid/kid.png"
-                },
-                {
-                    "url" : "assets/kid/kid.png"
-                }
-            ]
-        },
-        {
             "title": "88 Camino",
             "subtitle": "Interactive microsite made for rapper Drew Howard, featuring a custom built pseudo-3d racing game.",
             "description": "<a href='http://www.88camino.com/'>88camino.com</a>",
@@ -54,7 +54,7 @@
             "textcolour" : "#FC447A",
             "images": [
                 {
-                    "url" : "assets/kid/kid3.png"
+                    "url" : "assets/drew/drew1.gif"
                 },
                 {
                     "url" : "assets/kid/kid.png"
@@ -69,7 +69,7 @@
             "textcolour" : "black",
             "images": [
                 {
-                    "url" : "assets/kid/kid2.png"
+                    "url" : "assets/elie/elie1.png"
                 },
                 {
                     "url" : "assets/kid/kid.png"
@@ -80,8 +80,8 @@
             "title": "Ambiguous Ardor",
             "subtitle": "Temporary microsite made for creative agency Common Base to promote their gallery event.",
             "description": "<a href='http://www.ambiguousardor.gallery/'>ambiguousardor.gallery</a>",
-            "bgcolour" : "#f4cdc1",
-            "textcolour" : "white",
+            "bgcolour" : "#eabeb7", 
+            "textcolour" : "#f7ede5",
             "images": [
                 {
                     "url" : "assets/kid/kid2.png"
@@ -92,20 +92,38 @@
             ]
         },
         {
-            "title": "project 8",
-            "subtitle": "Revamped portfolio site built for Toronto-based film and design stupid Kid.",
-            "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
-            "bgcolour" : "#D2F2C9",
-            "textcolour" : "black",
+            "title": "Contemporary Thots",
+            "subtitle": "Strategy and content creation for instagram-centered campaign promoting creative collective CMDWN's Party, Museum of Contemporary Thots.",
+            "description": " ",
+            "bgcolour" : "#fff",
+            "textcolour" : "#fc6cb3",
             "images": [
                 {
-                    "url" : "assets/kid/kid.png"
+                    "url" : "assets/thots/thot1.jpg"
                 },
                 {
-                    "url" : "assets/kid/kid.png"
+                    "url" : "assets/thots/thot2.jpg"
                 },
                 {
-                    "url" : "assets/kid/kid.png"
+                    "url" : "assets/thots/thot3.jpg"
+                },
+                {
+                    "url" : "assets/thots/thot4.jpg"
+                },
+                {
+                    "url" : "assets/thots/thot5.jpg"
+                },
+                {
+                    "url" : "assets/thots/thot6.jpg"
+                },
+                {
+                    "url" : "assets/thots/thot7.jpg"
+                },
+                {
+                    "url" : "assets/thots/thot8.jpg"
+                },
+                {
+                    "url" : "assets/thots/thot9.png"
                 }
             ]
         }

@@ -113,6 +113,11 @@ function handleBackground (e){
                 $("aside").css('color' , HTMLProjects[i].getTextColour());
                 $(".logo svg").css('fill' , HTMLProjects[i].getTextColour());
                 $(".info").css('color' , HTMLProjects[i].getTextColour());
+                $("#about-wrap").css('color' , HTMLProjects[i].getTextColour());
+                $("#about-close div").css('background-color' , HTMLProjects[i].getTextColour());
+                $("#about-wrap p a").css('color' , HTMLProjects[i].getTextColour());
+                $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getTextColour());
+                $("#about-overlay").css('background-color' , HTMLProjects[i].getBg());
                 $(".project-description a").css({
                     'color' : HTMLProjects[i].getTextColour(),
                     'border-bottom-color' : HTMLProjects[i].getTextColour()});
@@ -172,13 +177,16 @@ function main(){
 
     var aboutOverlay = $('#about-overlay'),
         aboutClose = $('#about-close'),
+        scrollBody = $('.scrolling-content'),
         info = $('.info');
 
     info.click(function(){
         aboutOverlay.fadeIn(200);
+        scrollBody.addClass('stop-scroll');
     });
 
     aboutClose.click(function(){
         aboutOverlay.fadeOut(200);
+        scrollBody.removeClass('stop-scroll');
     });
 }
