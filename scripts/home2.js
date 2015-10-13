@@ -110,6 +110,9 @@ function handleBackground (e){
     		scroll + scrollDist < heightSoFar + HTMLProjects[i].getHeight()){
                 $("body").css('background-color' , HTMLProjects[i].getBg());
                 $(".project-title").css('color' , HTMLProjects[i].getTextColour());
+                $("aside").css('color' , HTMLProjects[i].getTextColour());
+                $(".logo svg").css('fill' , HTMLProjects[i].getTextColour());
+                $(".info").css('color' , HTMLProjects[i].getTextColour());
                 $(".project-description a").css({
                     'color' : HTMLProjects[i].getTextColour(),
                     'border-bottom-color' : HTMLProjects[i].getTextColour()});

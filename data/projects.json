@@ -50,8 +50,8 @@
             "title": "88 Camino",
             "subtitle": "Interactive microsite made for rapper Drew Howard, featuring a custom built pseudo-3d racing game.",
             "description": "<a href='http://www.88camino.com/'>88camino.com</a>",
-            "bgcolour" : "#e73781",
-            "textcolour" : "black",
+            "bgcolour" : "black",
+            "textcolour" : "#FC447A",
             "images": [
                 {
                     "url" : "assets/kid/kid3.png"
@@ -81,7 +81,7 @@
             "subtitle": "Temporary microsite made for creative agency Common Base to promote their gallery event.",
             "description": "<a href='http://www.ambiguousardor.gallery/'>ambiguousardor.gallery</a>",
             "bgcolour" : "#f4cdc1",
-            "textcolour" : "black",
+            "textcolour" : "white",
             "images": [
                 {
                     "url" : "assets/kid/kid2.png"
