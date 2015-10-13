@@ -2,9 +2,10 @@
     "projects": [
         {
             "title": "Kid. Studio",
-            "subtitle": "Revamped portfolio site built for Toronto-based film & design studio Kid.",
+            "subtitle": "Portfolio site built for film and design studio Kid. With customizable content management made on top of Kirby. ",
             "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
-            "colour" : "#E2e2e2",
+            "bgcolour" : "#E2e2e2",
+            "textcolour" : "black",
             "images": [
                 {
                     "url" : "assets/kid/kid1.png"
@@ -15,10 +16,11 @@
             ]
         },
         {
-            "title": "project 2",
-            "subtitle": "Revamped portfolio site built for Toronto-based film and design stupid Kid.",
-            "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
-            "colour" : "#C9D3F2",
+            "title": "Vejas Shop",
+            "subtitle": "Designed and built online store for toronto-based fashion designer Vejas Kruszewski for his Fall / Winter 2015 collection. ",
+            "description": "<a href='http://shop.vejaskruszewski.com'>shop.vejaskruszewski.com</a>",
+            "bgcolour" : "#fff",
+            "textcolour" : "red",
             "images": [
                 {
                     "url" : "assets/kid/kid.png"
@@ -29,11 +31,12 @@
             ]
         },
         {
-            "title": "project 3",
-            "subtitle": "Revamped portfolio site built for Toronto-based film and design stupid Kid.",
-            "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
+            "title": "Kastor & Pollux",
+            "subtitle": "Website designed and developed for creative collective Kastor and Pollux to showcase their work. ",
+            "description": "<a href='http://kastorandpollux.com/'>kastorandpollux.com</a>",
             "date": "example glossary",
-            "colour" : "#ff0000",
+            "bgcolour" : "cyan",
+            "textcolour" : "black",
             "images": [
                 {
                     "url" : "assets/kid/kid.png"
@@ -44,10 +47,11 @@
             ]
         },
         {
-            "title": "project 4",
-            "subtitle": "Revamped portfolio site built for Toronto-based film and design stupid Kid.",
-            "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
-            "colour" : "#D2F2C9",
+            "title": "88 Camino",
+            "subtitle": "Interactive microsite made for rapper Drew Howard, featuring a custom built pseudo-3d racing game.",
+            "description": "<a href='http://www.88camino.com/'>88camino.com</a>",
+            "bgcolour" : "#e73781",
+            "textcolour" : "black",
             "images": [
                 {
                     "url" : "assets/kid/kid3.png"
@@ -58,10 +62,11 @@
             ]
         },
         {
-            "title": "project 5",
-            "subtitle": "Revamped portfolio site built for Toronto-based film and design stupid Kid.",
-            "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
-            "colour" : "#F2CCC9",
+            "title": "Visionelie",
+            "subtitle": "Mobile site designed and built for photographer and mixed-media artist Visionelie, featuring an interactive landing page using the accelerometer.",
+            "description": "<a href='http://visionelie.co/'>visionelie.co</a>",
+            "bgcolour" : "#fff",
+            "textcolour" : "black",
             "images": [
                 {
                     "url" : "assets/kid/kid2.png"
@@ -72,24 +77,11 @@
             ]
         },
         {
-            "title": "project 6",
-            "subtitle": "Revamped portfolio site built for Toronto-based film and design stupid Kid.",
-            "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
-            "colour" : "#C9D3F2",
-            "images": [
-                {
-                    "url" : "assets/kid/kid2.png"
-                },
-                {
-                    "url" : "assets/kid/kid.png"
-                }
-            ]
-        },
-        {
-            "title": "project 7",
-            "subtitle": "Revamped portfolio site built for Toronto-based film and design stupid Kid.",
-            "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
-            "colour" : "#EBEAC0",
+            "title": "Ambiguous Ardor",
+            "subtitle": "Temporary microsite made for creative agency Common Base to promote their gallery event.",
+            "description": "<a href='http://www.ambiguousardor.gallery/'>ambiguousardor.gallery</a>",
+            "bgcolour" : "#f4cdc1",
+            "textcolour" : "black",
             "images": [
                 {
                     "url" : "assets/kid/kid2.png"
@@ -103,7 +95,8 @@
             "title": "project 8",
             "subtitle": "Revamped portfolio site built for Toronto-based film and design stupid Kid.",
             "description": "<a href='http://new.kidstudio.co'>new.kidstudio.co</a>",
-            "colour" : "#D2F2C9",
+            "bgcolour" : "#D2F2C9",
+            "textcolour" : "black",
             "images": [
                 {
                     "url" : "assets/kid/kid.png"

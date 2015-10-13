@@ -1,6 +1,7 @@
 function HTMLProject (project) {
 
-	this.colour = project.colour;
+	this.bgcolour = project.bgcolour;
+	this.textcolour = project.textcolour;
 	this.focused = false;
 
 	this.html = []
@@ -26,8 +27,12 @@ function HTMLProject (project) {
 		return this.html["container"].height();
 	}
 
-	this.getColour = function(){
-		return this.colour;
+	this.getBg = function(){
+		return this.bgcolour;
+	}
+
+	this.getTextColour = function(){
+		return this.textcolour;
 	}
 
 	this.getImages = function(){

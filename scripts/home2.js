@@ -108,7 +108,11 @@ function handleBackground (e){
     	
     	if (scroll + scrollDist >= heightSoFar &&
     		scroll + scrollDist < heightSoFar + HTMLProjects[i].getHeight()){
-    			$("body").css('background-color' , HTMLProjects[i].getColour());
+                $("body").css('background-color' , HTMLProjects[i].getBg());
+                $(".project-title").css('color' , HTMLProjects[i].getTextColour());
+                $(".project-description a").css({
+                    'color' : HTMLProjects[i].getTextColour(),
+                    'border-bottom-color' : HTMLProjects[i].getTextColour()});
 	    		break;
     	}
     	heightSoFar += HTMLProjects[i].getHeight();
@@ -160,7 +164,7 @@ function main(){
 	console.log('all loaded');
 	scroll = HTMLProjects[0].getHeight();
 	HTMLProjects[1].setFocus(true);
-	$("body").css('background-color' , HTMLProjects[1].getColour());
+	$("body").css('background-color' , HTMLProjects[1].getBg());
 	$(window).scrollTop(HTMLProjects[0].getHeight());
 
     var aboutOverlay = $('#about-overlay'),
@@ -169,5 +173,9 @@ function main(){
 
     info.click(function(){
         aboutOverlay.fadeIn(200);
+    });
+
+    aboutClose.click(function(){
+        aboutOverlay.fadeOut(200);
     });
 }
