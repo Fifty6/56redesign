@@ -43,9 +43,6 @@
                 },
                 {
                     "url" : "assets/vejas/vejas2.png"
-                },
-                {
-                    "url" : "assets/vejas/vejas3.png"
                 }
             ]
         },
@@ -63,10 +60,10 @@
                     "url" : "assets/drew/drew2.png"
                 },
                 {
-                    "url" : "assets/drew/drew3.png"
+                    "url" : "assets/drew/drew4.png"
                 },
                 {
-                    "url" : "assets/drew/drew4.png"
+                    "url" : "assets/drew/drew3.png"
                 }
             ]
         },
@@ -86,8 +83,8 @@
             "title": "Ambiguous Ardor",
             "subtitle": "Temporary microsite made for creative agency Common Base to promote their gallery event.",
             "description": "<a href='http://www.ambiguousardor.gallery/'>ambiguousardor.gallery</a>",
-            "bgcolour" : "#eabeb7", 
-            "textcolour" : "#f7ede5",
+            "bgcolour" : "#f7ede5 ", 
+            "textcolour" : "#eabeb7",
             "images": [
                 {
                     "url" : "assets/ambig/ambig1.png"
