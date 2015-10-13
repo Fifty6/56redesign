@@ -221,6 +221,7 @@ aside {
 	margin: auto 50px;
 	font-size: 46px;
 	color: white;
+	letter-spacing:-1px;
 	font-weight: 400;
 	line-height: 140%;
 }
