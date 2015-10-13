@@ -190,23 +190,28 @@ aside {
 	height: 30px;
 	width: 30px;
 	position: fixed;
-	bottom: 25px;
-	left: 25px;
+	bottom: 20px;
+	left: 22px;
 	cursor: pointer;
 }
 
 #about-close div {
 	width: 100%;
+	position: absolute;
 	height:5px;
 	background-color: white;
 }
 
 #about-close div:nth-child(1) {
 	margin-top: 6px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
 }
 
 #about-close div:nth-child(2) {
 	margin-top: 6px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 }
 
 #about-wrap {
@@ -227,12 +232,6 @@ aside {
 #about-wrap p a {
 	color: white;
 	border-bottom: 1px solid white;
-}
-
-.stop-scroll {
-	overflow: hidden;
-	height: 100%;
-	width: 100%;
 }
 /*
 .blur {

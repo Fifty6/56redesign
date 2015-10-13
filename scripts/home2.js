@@ -173,6 +173,18 @@ function main(){
 	scroll = HTMLProjects[0].getHeight();
 	HTMLProjects[1].setFocus(true);
 	$("body").css('background-color' , HTMLProjects[1].getBg());
+    $(".project-title").css('color' , HTMLProjects[1].getTextColour());
+    $("aside").css('color' , HTMLProjects[1].getTextColour());
+    $(".logo svg").css('fill' , HTMLProjects[1].getTextColour());
+    $(".info").css('color' , HTMLProjects[1].getTextColour());
+    $("#about-wrap").css('color' , HTMLProjects[1].getTextColour());
+    $("#about-close div").css('background-color' , HTMLProjects[1].getTextColour());
+    $("#about-wrap p a").css('color' , HTMLProjects[1].getTextColour());
+    $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[1].getTextColour());
+    $("#about-overlay").css('background-color' , HTMLProjects[1].getBg());
+    $(".project-description a").css({
+        'color' : HTMLProjects[1].getTextColour(),
+        'border-bottom-color' : HTMLProjects[1].getTextColour()});;
 	$(window).scrollTop(HTMLProjects[0].getHeight());
 
     var aboutOverlay = $('#about-overlay'),

@@ -24,10 +24,10 @@
             "textcolour" : "#061351",
             "images": [
                 {
-                    "url" : "assets/kid/kid.png"
+                    "url" : "assets/knp/knp1.png"
                 },
                 {
-                    "url" : "assets/kid/kid.png"
+                    "url" : "assets/knp/knp2.png"
                 }
             ]
         },
@@ -39,10 +39,13 @@
             "textcolour" : "red",
             "images": [
                 {
-                    "url" : "assets/kid/kid.png"
+                    "url" : "assets/vejas/vejas1.png"
                 },
                 {
-                    "url" : "assets/kid/kid.png"
+                    "url" : "assets/vejas/vejas2.png"
+                },
+                {
+                    "url" : "assets/vejas/vejas3.png"
                 }
             ]
         },
@@ -57,7 +60,13 @@
                     "url" : "assets/drew/drew1.gif"
                 },
                 {
-                    "url" : "assets/kid/kid.png"
+                    "url" : "assets/drew/drew2.png"
+                },
+                {
+                    "url" : "assets/drew/drew3.png"
+                },
+                {
+                    "url" : "assets/drew/drew4.png"
                 }
             ]
         },
@@ -70,9 +79,6 @@
             "images": [
                 {
                     "url" : "assets/elie/elie1.png"
-                },
-                {
-                    "url" : "assets/kid/kid.png"
                 }
             ]
         },
@@ -84,15 +90,12 @@
             "textcolour" : "#f7ede5",
             "images": [
                 {
-                    "url" : "assets/kid/kid2.png"
-                },
-                {
-                    "url" : "assets/kid/kid.png"
+                    "url" : "assets/ambig/ambig1.png"
                 }
             ]
         },
         {
-            "title": "Contemporary Thots",
+            "title": "MoCT",
             "subtitle": "Strategy and content creation for instagram-centered campaign promoting creative collective CMDWN's Party, Museum of Contemporary Thots.",
             "description": " ",
             "bgcolour" : "#fff",
