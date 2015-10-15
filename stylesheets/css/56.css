@@ -217,7 +217,7 @@ aside {
 #about-wrap {
 	text-align: left;
 	display:inline-block;
-	max-width: 900px;
+	max-width: 800px;
 	margin: auto 50px;
 	font-size: 46px;
 	color: white;
@@ -249,7 +249,7 @@ aside {
 
 @media screen and (max-width: 900px) {
 	.project-container {
-		margin: 0 0;
+		margin: 0 30px;
 	}
 
 	aside {
@@ -257,12 +257,10 @@ aside {
 	}
 
 	.project-title {
-		margin: 0 27px;
 		padding-top: 110px;
 	}
 
 	.project-description {
-		margin: 0 27px;
 	}
 
 	.project-container .project-img:first-of-type {
@@ -297,14 +295,14 @@ aside {
 @media screen and (max-width:700px) {
 
 	.project-title {
-		line-height: 380%;
+		line-height: 280%;
 	}
 	.project-title .subtitle {
-		font-size: 30px;
+		font-size: 20px;
 	}	
 
 	.project-title .title {
-		font-size: 30px;
+		font-size: 20px;
 	}
 }
 
