@@ -21,6 +21,7 @@ body {
     -o-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
+  text-align: center;
 }
 
 p {
@@ -37,6 +38,8 @@ a {
 
 .scrolling-content {
 	text-align: center;
+	display:inline-block;
+	max-width: 900px;
 }
 
 .logo{
@@ -47,6 +50,14 @@ a {
 	z-index: 565656;
 }
 
+.logo svg {
+	-webkit-transition: fill 200ms linear;
+  -moz-transition: fill 200ms linear;
+  -o-transition: fill 200ms linear;
+  -ms-transition: fill 200ms linear;
+transition: fill 200ms linear;
+}
+
 .project-container {
 	position: relative;
 	font-family: 'Work Sans', sans-serif;
@@ -54,7 +65,7 @@ a {
 	margin-bottom:10vw;
 	line-height: 18px;
 	/*height: 100%;*/
-	max-width: 700px;
+	max-width: 650px;
 	display:inline-block;
 	margin: 0 120px;
 	text-align: left;
@@ -66,7 +77,7 @@ a {
 }
 
 .project-container .project-img:last-of-type {
-	margin-bottom: 200px;
+	margin-bottom: 20px;
 }
 
 .project-container:nth-of-type(2) .project-img:first-of-type{
@@ -93,14 +104,19 @@ a {
 
 .project-title {
 	position: relative;
-	padding-top: 70px;
-	line-height: 480%;
+	padding-top: 170px;
+		-webkit-transition: color 200ms linear;
+	  -moz-transition: color 200ms linear;
+	  -o-transition: color 200ms linear;
+	  -ms-transition: color 200ms linear;
+  transition: color 200ms linear;
+	line-height: 440%;
 }
 
 .project-title .title {
 	position: relative;
 	font-family: 'America XIX';
-	font-size: 38px;
+	font-size: 34px;
 }
 
 .project-title .subtitle {
@@ -108,7 +124,7 @@ a {
 	font-weight: 500;
 	font-family: 'Work Sans', sans-serif;
 	letter-spacing: -1px;
-	font-size: 40px;
+	font-size: 36px;
 }
 
 .project-description {
@@ -117,6 +133,14 @@ a {
 	position: relative;
 	padding-top: 40px;
 	font-size: 16px;
+}
+
+.project-description a {
+		-webkit-transition: color 200ms linear, border-bottom-color 200ms linear;
+	  -moz-transition: color 200ms linear, border-bottom-color 200ms linear;
+	  -o-transition: color 200ms linear, border-bottom-color 200ms linear;
+	  -ms-transition: color 200ms linear, border-bottom-color 200ms linear;
+	transition: color 200ms linear, border-bottom-color 200ms linear;
 }
 
 .project-date {
@@ -145,11 +169,21 @@ nav {
 	padding-bottom:3px;
 	display:inline-block;
 	cursor: pointer;
+		-webkit-transition: color 200ms linear;
+	  -moz-transition: color 200ms linear;
+	  -o-transition: color 200ms linear;
+	  -ms-transition: color 200ms linear;
+  transition: color 200ms linear;
 }
 
 aside {
 	font-family: 'Work Sans';
 	z-index: 565656;
+		-webkit-transition: color 200ms linear;
+	  -moz-transition: color 200ms linear;
+	  -o-transition: color 200ms linear;
+	  -ms-transition: color 200ms linear;
+  transition: color 200ms linear;
 }
 
 #communications {
@@ -160,6 +194,7 @@ aside {
 	position: fixed;
 	top: 275px;
 	right:-215px;
+	text-align: left;
 	font-size: 12px;
 }
 
@@ -184,6 +219,11 @@ aside {
 	lefT: 0;
 	text-align: center;
 	overflow: scroll;
+		-webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 #about-close {
@@ -193,6 +233,11 @@ aside {
 	bottom: 20px;
 	left: 22px;
 	cursor: pointer;
+		-webkit-transition: color 1000ms linear;
+	  -moz-transition: color 1000ms linear;
+	  -o-transition: color 1000ms linear;
+	  -ms-transition: color 1000ms linear;
+	transition: color 1000ms linear;
 }
 
 #about-close div {
@@ -224,6 +269,11 @@ aside {
 	letter-spacing:-1px;
 	font-weight: 400;
 	line-height: 140%;
+		-webkit-transition: color 1000ms linear;
+	  -moz-transition: color 1000ms linear;
+	  -o-transition: color 1000ms linear;
+	  -ms-transition: color 1000ms linear;
+  transition: color 1000ms linear;
 }
 
 #about-wrap span {
@@ -233,6 +283,11 @@ aside {
 #about-wrap p a {
 	color: white;
 	border-bottom: 1px solid white;
+		-webkit-transition: color 1000ms linear;
+	  -moz-transition: color 1000ms linear;
+	  -o-transition: color 1000ms linear;
+	  -ms-transition: color 1000ms linear;
+  transition: color 1000ms linear;
 }
 /*
 .blur {
@@ -317,4 +372,39 @@ aside {
 		font-size: 22px;
 		margin: auto 30px;
 	}
+}
+
+
+
+/*lmao*/
+
+.ghost,
+.glitch {
+  opacity: 0.25;
+}
+
+#message {
+	text-align: left;
+	display:inline-block;
+  max-width: 800px;
+  margin: 0 25px;
+  margin-top:50px;
+}
+
+#container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align:center;
+  left: 0;
+  top: 0;
+}
+#container:before {
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  left: 0;
+  top: 0;
 }
