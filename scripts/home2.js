@@ -160,7 +160,7 @@ $('body').on({
     		return;
     	}
     	if (!handleInfScroll(scroll)){
-    		checkFocus(e);
+    		// checkFocus(e);
     	}
 
     	handleBackground(e);
@@ -195,10 +195,12 @@ function main(){
     info.click(function(){
         aboutOverlay.fadeIn(200);
         scrollBody.addClass('stop-scroll');
+        $('body').css('overflow', 'hidden');
     });
 
     aboutClose.click(function(){
         aboutOverlay.fadeOut(200);
         scrollBody.removeClass('stop-scroll');
+        $('body').css('overflow', 'auto');
     });
 }

@@ -165,7 +165,7 @@ nav {
 .nav-item {
 	border-bottom: 0px solid black;
 	font-family: 'Work Sans';
-	font-size:35px;
+	font-size:50px;
 	padding-bottom:3px;
 	display:inline-block;
 	cursor: pointer;
@@ -173,7 +173,12 @@ nav {
 	  -moz-transition: color 200ms linear;
 	  -o-transition: color 200ms linear;
 	  -ms-transition: color 200ms linear;
-  transition: color 200ms linear;
+  transition: color 200ms linear, 200ms opacity ease-in-out ;
+  opacity:1;
+}
+
+.nav-item:hover {
+	opacity: 0.5;
 }
 
 aside {
@@ -227,8 +232,8 @@ aside {
 }
 
 #about-close {
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 	position: fixed;
 	bottom: 20px;
 	left: 22px;
@@ -237,13 +242,18 @@ aside {
 	  -moz-transition: color 1000ms linear;
 	  -o-transition: color 1000ms linear;
 	  -ms-transition: color 1000ms linear;
-	transition: color 1000ms linear;
+	transition: color 1000ms linear,  200ms opacity ease-in-out;
+	opacity:1;
+}
+
+#about-close:hover {
+	opacity: 0.5;
 }
 
 #about-close div {
 	width: 100%;
 	position: absolute;
-	height:3px;
+	height:4px;
 	background-color: white;
 }
 
@@ -372,39 +382,4 @@ aside {
 		font-size: 22px;
 		margin: auto 30px;
 	}
-}
-
-
-
-/*lmao*/
-
-.ghost,
-.glitch {
-  opacity: 0.25;
-}
-
-#message {
-	text-align: left;
-	display:inline-block;
-  max-width: 800px;
-  margin: 0 25px;
-  margin-top:50px;
-}
-
-#container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  text-align:center;
-  left: 0;
-  top: 0;
-}
-#container:before {
-  pointer-events: none;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  content: "";
-  left: 0;
-  top: 0;
 }
