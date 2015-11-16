@@ -185,6 +185,7 @@ function main(){
     $(".project-description a").css({
         'color' : HTMLProjects[1].getTextColour(),
         'border-bottom-color' : HTMLProjects[1].getTextColour()});;
+
 	$(window).scrollTop(HTMLProjects[0].getHeight());
 
     var aboutOverlay = $('#about-overlay'),
@@ -204,3 +205,4 @@ function main(){
         $('body').css('overflow', 'auto');
     });
 }
+
