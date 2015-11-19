@@ -36,10 +36,15 @@ a {
 	color: black;
 }
 
+.fadein {
+	opacity: 0;
+}
+
 .scrolling-content {
 	text-align: center;
 	display:inline-block;
 	max-width: 900px;
+	transition: 0.5s all ease-in-out;
 }
 
 .logo{
@@ -48,7 +53,21 @@ a {
 	left: 20px;
 	top: 20px;
 	z-index: 565656;
+	animation: logoin 1s 1 ease-out;
+	-webkit-animation: logoin 1s 1 ease-out;
 }
+
+@keyframes logoin {
+	0% { left: -120px;}
+	100% { left: 20px;}
+}
+
+@-webkit-keyframes logoin {
+	0% { left: -120px;}
+	100% { left: 20px;}
+}
+
+
 
 .logo svg {
 	-webkit-transition: fill 200ms linear;
@@ -298,6 +317,13 @@ aside {
 	  -o-transition: color 1000ms linear;
 	  -ms-transition: color 1000ms linear;
   transition: color 1000ms linear;
+}
+
+#featured {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:-10;
 }
 /*
 .blur {

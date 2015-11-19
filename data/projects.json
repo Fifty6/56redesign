@@ -68,6 +68,21 @@
             ]
         },
         {
+            "title": "Willis Chan",
+            "subtitle": "Designed and built online store for toronto-based fashion designer Vejas Kruszewski for his Fall / Winter 2015 collection. ",
+            "description": "<a href='http://willischan.ca'>willischan.ca</a>",
+            "bgcolour" : "black",
+            "textcolour" : "white",
+            "images": [
+                {
+                    "url" : "assets/vejas/vejas1.png"
+                },
+                {
+                    "url" : "assets/vejas/vejas2.png"
+                }
+            ]
+        },
+        {
             "title": "Visionelie",
             "subtitle": "Mobile site designed and built for photographer and mixed-media artist Visionelie, featuring an interactive landing page using the accelerometer.",
             "description": "<a href='http://visionelie.co/'>visionelie.co</a>",
