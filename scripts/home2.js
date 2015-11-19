@@ -194,9 +194,9 @@ function main(){
         'color' : HTMLProjects[1].getTextColour(),
         'border-bottom-color' : HTMLProjects[1].getTextColour()});
 
-    plane.material.color.setHex("0x"+HTMLProjects[1].getBg().substring(1,HTMLProjects[1].getBg().length));
-    renderer.setClearColor(HTMLProjects[1].getTextColour(), 1);
-    scene.fog.color.setHex("0x"+HTMLProjects[1].getTextColour().substring(1,HTMLProjects[1].getTextColour().length));
+    plane.material.color.setHex("0x"+HTMLProjects[1].getTextColour().substring(1,HTMLProjects[1].getTextColour().length));
+    renderer.setClearColor(HTMLProjects[1].getBg(), 1);
+    scene.fog.color.setHex("0x"+HTMLProjects[1].getBg().substring(1,HTMLProjects[1].getBg().length));
 
 	$(window).scrollTop(HTMLProjects[0].getHeight());
 

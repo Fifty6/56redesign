@@ -5,6 +5,19 @@ body, html {
 	width: 100%;
 }
 
+@font-face {
+    font-family: 'sabon roman';
+    src: url('sabon_roman-webfont.eot');
+    src: url('sabon_roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sabon_roman-webfont.woff2') format('woff2'),
+         url('sabon_roman-webfont.woff') format('woff'),
+         url('sabon_roman-webfont.ttf') format('truetype'),
+         url('sabon_roman-webfont.svg#sabonroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -144,7 +157,7 @@ transition: fill 200ms linear;
 .project-img {
 	max-width: 100%;
 	max-height:1000px;
-	margin: 100px 0;
+	margin: 50px 0;
 	opacity: 0;
 }
 
@@ -154,7 +167,7 @@ transition: fill 200ms linear;
 
 .project-title {
 	position: relative;
-	padding-top: 70px;
+	padding-top: 120px;
 		-webkit-transition: color 200ms linear;
 	  -moz-transition: color 200ms linear;
 	  -o-transition: color 200ms linear;
@@ -165,15 +178,15 @@ transition: fill 200ms linear;
 
 .project-title .title {
 	position: relative;
-	font-family: 'America XIX';
+	font-family: 'sabon roman';
 	font-size: 34px;
 }
 
 .project-title .subtitle {
 	position: relative;
 	font-weight: 500;
-	font-family: 'Work Sans', sans-serif;
-	letter-spacing: -1px;
+	font-family: 'sabon roman';
+	/*letter-spacing: -1px;*/
 	font-size: 36px;
 }
 
@@ -245,7 +258,7 @@ aside {
 
 #communications {
 	width: 500px;
-	-ms-transform: rotate(90deg);
+	/*-ms-transform: rotate(90deg);*/
 	-webkit-transform: rotate(90deg);
 	 transform: rotate(90deg);
 	position: fixed;
@@ -281,9 +294,9 @@ aside {
 	text-align: center;
 	overflow: scroll;
 		-webkit-transition: background-color 1000ms linear;
-    -moz-transition: background-color 1000ms linear;
+/*    -moz-transition: background-color 1000ms linear;
     -o-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;*/
   transition: background-color 1000ms linear;
 }
 
@@ -295,9 +308,9 @@ aside {
 	left: 22px;
 	cursor: pointer;
 		-webkit-transition: color 1000ms linear;
-	  -moz-transition: color 1000ms linear;
+/*	  -moz-transition: color 1000ms linear;
 	  -o-transition: color 1000ms linear;
-	  -ms-transition: color 1000ms linear;
+	  -ms-transition: color 1000ms linear;*/
 	transition: color 1000ms linear,  200ms opacity ease-in-out;
 	opacity:1;
 }
@@ -330,15 +343,15 @@ aside {
 	display:inline-block;
 	max-width: 800px;
 	margin: auto 50px;
-	font-size: 46px;
+	font-size: 40px;
 	color: white;
 	letter-spacing:-1px;
 	font-weight: 400;
 	line-height: 140%;
 		-webkit-transition: color 1000ms linear;
-	  -moz-transition: color 1000ms linear;
-	  -o-transition: color 1000ms linear;
-	  -ms-transition: color 1000ms linear;
+	  /*-moz-transition: color 1000ms linear;*/
+/*	  -o-transition: color 1000ms linear;
+	  -ms-transition: color 1000ms linear;*/
   transition: color 1000ms linear;
 }
 
@@ -350,9 +363,9 @@ aside {
 	color: white;
 	border-bottom: 1px solid white;
 		-webkit-transition: color 1000ms linear;
-	  -moz-transition: color 1000ms linear;
+/*	  -moz-transition: color 1000ms linear;
 	  -o-transition: color 1000ms linear;
-	  -ms-transition: color 1000ms linear;
+	  -ms-transition: color 1000ms linear;*/
   transition: color 1000ms linear;
 }
 

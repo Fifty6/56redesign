@@ -204,7 +204,7 @@ function render() {
 
       }
 
-      i++
+      i++;
     }
 
   }

@@ -35,8 +35,8 @@
             "title": "Vejas Shop",
             "subtitle": "Designed and built online store for toronto-based fashion designer Vejas Kruszewski for his Fall / Winter 2015 collection. ",
             "description": "<a href='http://shop.vejaskruszewski.com'>shop.vejaskruszewski.com</a>",
-            "bgcolour" : "#fff",
-            "textcolour" : "red",
+            "bgcolour" : "#ffffff",
+            "textcolour" : "#ff0000",
             "images": [
                 {
                     "url" : "assets/vejas/vejas1.png"
@@ -71,8 +71,8 @@
             "title": "Willis Chan",
             "subtitle": "Designed and built online store for toronto-based fashion designer Vejas Kruszewski for his Fall / Winter 2015 collection. ",
             "description": "<a href='http://willischan.ca'>willischan.ca</a>",
-            "bgcolour" : "black",
-            "textcolour" : "white",
+            "bgcolour" : "#000000",
+            "textcolour" : "#ffffff",
             "images": [
                 {
                     "url" : "assets/vejas/vejas1.png"
@@ -86,8 +86,8 @@
             "title": "Visionelie",
             "subtitle": "Mobile site designed and built for photographer and mixed-media artist Visionelie, featuring an interactive landing page using the accelerometer.",
             "description": "<a href='http://visionelie.co/'>visionelie.co</a>",
-            "bgcolour" : "#fff",
-            "textcolour" : "black",
+            "bgcolour" : "#ffffff",
+            "textcolour" : "#000000",
             "images": [
                 {
                     "url" : "assets/elie/elie1.png"
@@ -98,7 +98,7 @@
             "title": "Ambiguous Ardor",
             "subtitle": "Temporary microsite made for creative agency Common Base to promote their gallery event.",
             "description": "<a href='http://www.ambiguousardor.gallery/'>ambiguousardor.gallery</a>",
-            "bgcolour" : "#f7ede5 ", 
+            "bgcolour" : "#f7ede5", 
             "textcolour" : "#eabeb7",
             "images": [
                 {
@@ -110,7 +110,7 @@
             "title": "MoCT",
             "subtitle": "Strategy and content creation for instagram-centered campaign promoting creative collective CMDWN's Party, Museum of Contemporary Thots.",
             "description": " ",
-            "bgcolour" : "#fff",
+            "bgcolour" : "#ffffff",
             "textcolour" : "#fc6cb3",
             "images": [
                 {
