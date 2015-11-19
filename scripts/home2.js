@@ -114,17 +114,17 @@ function handleBackground (e){
     	if (scroll + scrollDist >= heightSoFar &&
     		scroll + scrollDist < heightSoFar + HTMLProjects[i].getHeight()){
                 $("body").css('background-color' , HTMLProjects[i].getBg());
-                plane.material.color.setHex("0x"+HTMLProjects[i].getBg().substring(1,HTMLProjects[i].getBg().length));
-                renderer.setClearColor(HTMLProjects[i].getTextColour(), 1);
-                scene.fog.color.setHex("0x"+HTMLProjects[i].getTextColour().substring(1,HTMLProjects[i].getTextColour().length));
+                plane.material.color.setHex("0x"+HTMLProjects[i].getTextColour().substring(1,HTMLProjects[i].getTextColour().length));
+                renderer.setClearColor(HTMLProjects[i].getBg(), 1);
+                scene.fog.color.setHex("0x"+HTMLProjects[i].getBg().substring(1,HTMLProjects[i].getBg().length));
                 $(".project-title").css('color' , HTMLProjects[i].getTextColour());
                 $("aside").css('color' , HTMLProjects[i].getTextColour());
                 $(".logo svg").css('fill' , HTMLProjects[i].getTextColour());
                 $(".info").css('color' , HTMLProjects[i].getTextColour());
-                $("#about-wrap").css('color' , HTMLProjects[i].getTextColour());
-                $("#about-close div").css('background-color' , HTMLProjects[i].getTextColour());
-                $("#about-wrap p a").css('color' , HTMLProjects[i].getTextColour());
-                $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getTextColour());
+                $("#about-wrap").css('color' , HTMLProjects[i].getBg());
+                $("#about-close div").css('background-color' , HTMLProjects[i].getBg());
+                $("#about-wrap p a").css('color' , HTMLProjects[i].getBg());
+                $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getBg());
                 $("#about-overlay").css('background-color' , HTMLProjects[i].getBg());
                 $(".project-description a").css({
                     'color' : HTMLProjects[i].getTextColour(),
