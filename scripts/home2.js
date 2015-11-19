@@ -204,5 +204,9 @@ function main(){
         scrollBody.removeClass('stop-scroll');
         $('body').css('overflow', 'auto');
     });
+
+    setTimeout(function(){
+        scrollBody.removeClass('fadein');
+    }, 900);
 }
 
