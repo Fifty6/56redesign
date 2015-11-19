@@ -67,6 +67,38 @@ a {
 	100% { left: 20px;}
 }
 
+@keyframes navin {
+	0% { bottom: -120px;}
+	100% { bottom: 20px;}
+}
+
+@-webkit-keyframes navin {
+	0% { bottom: -120px;}
+	100% { bottom: 20px;}
+}
+
+@keyframes talkin {
+	0% { right: -105px;}
+	100% { right: 35px;}
+}
+
+@-webkit-keyframes talkin {
+	0% { right: -105px;}
+	100% { right: 35px;}
+}
+
+@keyframes commin {
+	0% { top: -400px;}
+	100% { top: 275px;}
+}
+
+@-webkit-keyframes commin {
+	0% { top: -400px;}
+	100% { top: 275px;}
+}
+
+
+
 
 
 .logo svg {
@@ -175,6 +207,8 @@ nav {
 	z-index: 565656;
 	bottom: 20px;
 	left: 28px;
+	animation: navin 1s 1 ease-out;
+	-webkit-animation: navin 1s 1 ease-out;
 }
 
 .work {
@@ -220,6 +254,8 @@ aside {
 	right:-215px;
 	text-align: left;
 	font-size: 12px;
+	animation: commin 1s 1 ease-out;
+	-webkit-animation: commin 1s 1 ease-out;
 }
 
 #talk2us {
@@ -230,6 +266,8 @@ aside {
 	text-align: right;
 	line-height: 160%;
 	font-size: 12px;
+	animation: talkin 1s 1 ease-out;
+	-webkit-animation: talkin 1s 1 ease-out;
 }
 
 #about-overlay {
