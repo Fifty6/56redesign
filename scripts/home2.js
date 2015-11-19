@@ -14,10 +14,15 @@ function initHeights(){
 	}
 }
 
+function shuffle(o){
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}
+
 $( document ).ready(function() {
 	$.getJSON("data/projects.json", function(json) {
 		NUM_PROJECTS = json.projects.length;
-
+        shuffle(json.projects);
 		HTMLProjects.push(new HTMLProject(json.projects[NUM_PROJECTS - 1]));
 	    for (var i = 0; i < json.projects.length; i++){
 	    	HTMLProjects.push(new HTMLProject(json.projects[i]));
@@ -109,6 +114,9 @@ function handleBackground (e){
     	if (scroll + scrollDist >= heightSoFar &&
     		scroll + scrollDist < heightSoFar + HTMLProjects[i].getHeight()){
                 $("body").css('background-color' , HTMLProjects[i].getBg());
+                plane.material.color.setHex("0x"+HTMLProjects[i].getBg().substring(1,HTMLProjects[i].getBg().length));
+                renderer.setClearColor(HTMLProjects[i].getTextColour(), 1);
+                scene.fog.color.setHex("0x"+HTMLProjects[i].getTextColour().substring(1,HTMLProjects[i].getTextColour().length));
                 $(".project-title").css('color' , HTMLProjects[i].getTextColour());
                 $("aside").css('color' , HTMLProjects[i].getTextColour());
                 $(".logo svg").css('fill' , HTMLProjects[i].getTextColour());
@@ -184,7 +192,11 @@ function main(){
     $("#about-overlay").css('background-color' , HTMLProjects[1].getBg());
     $(".project-description a").css({
         'color' : HTMLProjects[1].getTextColour(),
-        'border-bottom-color' : HTMLProjects[1].getTextColour()});;
+        'border-bottom-color' : HTMLProjects[1].getTextColour()});
+
+    plane.material.color.setHex("0x"+HTMLProjects[1].getBg().substring(1,HTMLProjects[1].getBg().length));
+    renderer.setClearColor(HTMLProjects[1].getTextColour(), 1);
+    scene.fog.color.setHex("0x"+HTMLProjects[1].getTextColour().substring(1,HTMLProjects[1].getTextColour().length));
 
 	$(window).scrollTop(HTMLProjects[0].getHeight());
 

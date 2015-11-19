@@ -9,7 +9,7 @@ var plane, clicked = 0;
 
 var SEPARATION = 1000, AMOUNTX = 50, AMOUNTY = 50;
 
-var COLUMNS = 50, ROWS = 50, PLANESIZE = 1500;
+var COLUMNS = 20, ROWS = 20, PLANESIZE = 5000;
 
 init();
 animate();
@@ -19,11 +19,11 @@ function init() {
   container = $('#featured');
 
   camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 10000 );
-  camera.position.z = 300;
+  camera.position.z = 1000;
   camera.position.y = 80;
 
   scene = new THREE.Scene();
-  scene.fog = new THREE.Fog( 0xFC447A, 4, 1500 );
+  scene.fog = new THREE.Fog( 0x000000, 6, 3500 );
 
 
   plane = new THREE.Mesh(new THREE.PlaneGeometry( PLANESIZE, PLANESIZE, COLUMNS - 1, ROWS - 1), new THREE.MeshBasicMaterial({opacity: 1, color: 0x000000, shading: THREE.FlatShading, wireframe: false}));
@@ -64,7 +64,7 @@ function init() {
 function onWindowResize() {
 
   windowHalfX = window.innerWidth ;
-  windowHalfY = window.innerHeight ;
+  windowHalfY = window.innerHeight;
 
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
@@ -165,8 +165,8 @@ var factorConst = 1.4;
 
 function render() {
 
-  camera.position.x += ( mouseX - camera.position.x ) * .05;
-  camera.position.y += ( - mouseY - camera.position.y ) * .05 + 10;
+  camera.position.x += ( mouseX - camera.position.x ) * .4;
+  camera.position.y += ( - mouseY - camera.position.y ) * .05 + 30;
   camera.lookAt( scene.position );
 
   var i = 0;
@@ -175,11 +175,11 @@ function render() {
 
     for ( var iy = 0; iy < ROWS; iy ++ ) {
 
-      plane.geometry.vertices[i].z = ( Math.sin( ( ix + count ) * 2 ) *  0.5 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 8 );
+      plane.geometry.vertices[i].z = ( Math.sin( ( ix + count ) * 0.3 ) * 75 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 75 );
 
       
 
-      if (clicked){
+      if (clicked && clickedPoint != null){
 
         var dist = Math.abs(clickedPoint.x - plane.geometry.vertices[i].x);
         var factor;
