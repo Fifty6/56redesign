@@ -23,7 +23,7 @@ function init() {
   // camera.position.y = 80;
 
   scene = new THREE.Scene();
-  scene.fog = new THREE.Fog( 0x000000, 0, 1600 );
+  scene.fog = new THREE.Fog( 0x000000, 0, 1900 );
 
   plane = new THREE.Mesh(new THREE.PlaneGeometry( PLANESIZE, PLANESIZE, COLUMNS - 1, ROWS - 1), new THREE.MeshBasicMaterial({opacity: 1, color: 0x000000, shading: THREE.FlatShading, wireframe: false}));
   plane.geometry.verticesNeedUpdate = true;
@@ -164,9 +164,9 @@ var factorConst = 1.4;
 
 function render() {
 
-  if (camera.position.y + ( - mouseY - camera.position.y ) * .05 + 20 < 400){
+  if (camera.position.y + ( - mouseY - camera.position.y ) * .05 + 25 < 400){
     
-    camera.position.y += ( - mouseY - camera.position.y ) * .05 + 20;
+    camera.position.y += ( - mouseY - camera.position.y ) * .05 + 25;
     
     // console.log(camera.position.y += ( - mouseY - camera.position.y ) * .05 + 30);
   }

@@ -114,9 +114,11 @@ function handleBackground (e){
     	if (scroll + scrollDist >= heightSoFar &&
     		scroll + scrollDist < heightSoFar + HTMLProjects[i].getHeight()){
                 $("body").css('background-color' , HTMLProjects[i].getBg());
+
                 plane.material.color.setHex("0x"+HTMLProjects[i].getTextColour().substring(1,HTMLProjects[i].getTextColour().length));
                 renderer.setClearColor(HTMLProjects[i].getBg(), 1);
                 scene.fog.color.setHex("0x"+HTMLProjects[i].getBg().substring(1,HTMLProjects[i].getBg().length));
+
                 $(".project-title").css('color' , HTMLProjects[i].getTextColour());
                 $("aside").css('color' , HTMLProjects[i].getTextColour());
                 $(".logo svg").css('fill' , HTMLProjects[i].getTextColour());
@@ -185,10 +187,10 @@ function main(){
     $("aside").css('color' , HTMLProjects[1].getTextColour());
     $(".logo svg").css('fill' , HTMLProjects[1].getTextColour());
     $(".info").css('color' , HTMLProjects[1].getTextColour());
-    $("#about-wrap").css('color' , HTMLProjects[1].getTextColour());
-    $("#about-close div").css('background-color' , HTMLProjects[1].getTextColour());
-    $("#about-wrap p a").css('color' , HTMLProjects[1].getTextColour());
-    $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[1].getTextColour());
+    $("#about-wrap").css('color' , HTMLProjects[1].getBg());
+    $("#about-close div").css('background-color' , HTMLProjects[1].getBg());
+    $("#about-wrap p a").css('color' , HTMLProjects[1].getBg());
+    $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[1].getBg());
     $("#about-overlay").css('background-color' , HTMLProjects[1].getBg());
     $(".project-description a").css({
         'color' : HTMLProjects[1].getTextColour(),
