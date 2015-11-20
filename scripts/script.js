@@ -23,7 +23,7 @@ function init() {
   // camera.position.y = 80;
 
   scene = new THREE.Scene();
-  scene.fog = new THREE.Fog( 0x000000, 6, 2000 );
+  scene.fog = new THREE.Fog( 0x000000, 0, 1600 );
 
   plane = new THREE.Mesh(new THREE.PlaneGeometry( PLANESIZE, PLANESIZE, COLUMNS - 1, ROWS - 1), new THREE.MeshBasicMaterial({opacity: 1, color: 0x000000, shading: THREE.FlatShading, wireframe: false}));
   plane.geometry.verticesNeedUpdate = true;
@@ -164,8 +164,13 @@ var factorConst = 1.4;
 
 function render() {
 
+  if (camera.position.y + ( - mouseY - camera.position.y ) * .05 + 20 < 400){
+    
+    camera.position.y += ( - mouseY - camera.position.y ) * .05 + 20;
+    
+    // console.log(camera.position.y += ( - mouseY - camera.position.y ) * .05 + 30);
+  }
   camera.position.x += ( mouseX - camera.position.x ) * .4;
-  camera.position.y += ( - mouseY - camera.position.y ) * .05 + 20;
   camera.lookAt( scene.position );
 
   var i = 0;
@@ -174,7 +179,7 @@ function render() {
 
     for ( var iy = 0; iy < ROWS; iy ++ ) {
 
-      plane.geometry.vertices[i].z = ( Math.sin( ( ix + count ) * 0.3 ) * 55 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 55 );
+      plane.geometry.vertices[i].z = ( Math.sin( ( ix + count ) * 0.3 ) * 40 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 40 );
 
       
 
