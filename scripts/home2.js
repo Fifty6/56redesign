@@ -178,7 +178,7 @@ function handleOpacity (e){
     	for (var j = 0; j < HTMLProjects[i].getImages().length; j++){
 
             var top_of_object = HTMLProjects[i].getImages()[j].offset().top;
-            var bottom_of_object = HTMLProjects[i].getImages()[j].offset().top + HTMLProjects[i].getImages()[j].outerHeight(true);
+            var bottom_of_object = HTMLProjects[i].getImages()[j].offset().top + HTMLProjects[i].getImages()[j].height();
             var middle_of_window = $(window).scrollTop() + $(window).height()/2;
 
             if( HTMLProjects[i].getImages()[j].css('opacity') != 1 && middle_of_window > top_of_object && middle_of_window < bottom_of_object ){
