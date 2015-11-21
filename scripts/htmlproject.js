@@ -43,6 +43,10 @@ function HTMLProject (project) {
 		return this.images;
 	}
 
+	this.getText = function(){
+		return this.html["title"];
+	}
+
 	this.isFocused = function(){
 		return this.focused;
 	}

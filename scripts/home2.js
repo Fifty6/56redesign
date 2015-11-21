@@ -139,13 +139,47 @@ function handleBackground (e){
 
 function handleOpacity (e){
 
-    for (var i = 1; i < HTMLProjects.length; i++){
+    for (var i = 0; i < HTMLProjects.length; i++){
+        if (i == 1){
+            continue;
+        }
+        console.log(scroll + $('body').height());
+        console.log(HTMLProjects[i].getText().offset().top);
+        if (HTMLProjects[i].getText().css('opacity') != 0 &&
+            ((scroll + $('body').height() + 500) < HTMLProjects[i].getText().offset().top || (scroll - 500) > (HTMLProjects[i].getText().offset().top + HTMLProjects[i].getText().height()))) {
+                HTMLProjects[i].getText().animate({opacity: 0}, 0);  
+                $(HTMLProjects[i].getText().parent().children()[1]).animate({opacity: 0}, 0); 
+                continue;
+        }
+
+        if (HTMLProjects[i].getText().css('opacity') != 1 &&
+            scroll + $('body').height() > HTMLProjects[i].getText().offset().top + $('body').height()/2) {
+                HTMLProjects[i].getText().animate({opacity: 1}, 750);  
+                $(HTMLProjects[i].getText().parent().children()[1]).animate({opacity: 1}, 750);
+                // continue;
+        }
+
+               
+    }    
+
+    for (var i = 0; i < HTMLProjects.length; i++){
     	for (var j = 0; j < HTMLProjects[i].getImages().length; j++){
-    		if (lastScroll <  HTMLProjects[i].getImages()[j].offset().top - 100 - HTMLProjects[i].getImages()[j].height() &&
-    			scroll > HTMLProjects[i].getImages()[j].offset().top - 100 - HTMLProjects[i].getImages()[j].height()) {
+            if (i == 1 && j == 0){
+                continue;
+            }
+            if (HTMLProjects[i].getImages()[j].css('opacity') != 0 &&
+                ((scroll + $('body').height() + 500)< HTMLProjects[i].getImages()[j].offset().top || (scroll - 500) > (HTMLProjects[i].getImages()[j].offset().top + HTMLProjects[i].getImages()[j].height()))) {
+                    HTMLProjects[i].getImages()[j].animate({opacity: 0}, 0);
+                    continue;       
+            }
+    		if (HTMLProjects[i].getImages()[j].css('opacity') != 1 &&
+    			scroll + $('body').height() > HTMLProjects[i].getImages()[j].offset().top + $('body').height()/2) {
     				HTMLProjects[i].getImages()[j].animate({opacity: 1}, 750);
-    				return;
+                    // continue;
+    				
 			}
+
+            
     	}
     }
 }
@@ -201,6 +235,10 @@ function main(){
     scene.fog.color.setHex("0x"+HTMLProjects[1].getBg().substring(1,HTMLProjects[1].getBg().length));
 
 	$(window).scrollTop(HTMLProjects[0].getHeight());
+
+    HTMLProjects[1].getText().animate({opacity: 1}, 750);  
+    $(HTMLProjects[1].getText().parent().children()[1]).animate({opacity: 1}, 750);
+    HTMLProjects[1].getImages()[0].animate({opacity: 1}, 750);
 
     var aboutOverlay = $('#about-overlay'),
         aboutClose = $('#about-close'),
