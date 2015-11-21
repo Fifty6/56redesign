@@ -216,7 +216,11 @@ $('body').on({
     	if (!handleInfScroll(scroll)){
     		// checkFocus(e);
             handleOpacity(e);
-    	}
+    	}else{
+            HTMLProjects[1].getText().css({'opacity': '1'});  
+            $(HTMLProjects[1].getText().parent().children()[1]).css({'opacity': '1'});
+            HTMLProjects[1].getImages()[0].animate({opacity: 1}, 750);
+        }
 
     	handleBackground(e);
     	
