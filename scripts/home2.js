@@ -137,49 +137,59 @@ function handleBackground (e){
     }
 }
 
+function inView (top, bottom){
+    if ($(window).scrollTop() < bottom && ($(window).scrollTop() + $(window).height()) > bottom){
+        return true;
+    }
+
+    if ($(window).scrollTop() < top && ($(window).scrollTop() + $(window).height()) > top){
+        return true;
+    }
+
+    if ($(window).scrollTop() > top && ($(window).scrollTop() + $(window).height()) < bottom){
+        return true;
+    }
+
+    return false;
+}
+
 function handleOpacity (e){
 
     for (var i = 0; i < HTMLProjects.length; i++){
-        if (i == 1){
-            continue;
-        }
-        console.log(scroll + $('body').height());
-        console.log(HTMLProjects[i].getText().offset().top);
-        if (HTMLProjects[i].getText().css('opacity') != 0 &&
-            ((scroll + $('body').height() + 500) < HTMLProjects[i].getText().offset().top || (scroll - 500) > (HTMLProjects[i].getText().offset().top + HTMLProjects[i].getText().height()))) {
-                HTMLProjects[i].getText().css({'opacity': 0});  
-                $(HTMLProjects[i].getText().parent().children()[1]).css({'opacity': 0}); 
-                continue;
-        }
+        
+        var top_of_object = HTMLProjects[i].getText().offset().top;
+        var bottom_of_object = top_of_object + HTMLProjects[i].getText().outerHeight(true);
 
-        if (HTMLProjects[i].getText().css('opacity') != 1 &&
-            scroll + $('body').height() > HTMLProjects[i].getText().offset().top + $('body').height()/2) {
-                HTMLProjects[i].getText().animate({opacity: 1}, 750);  
-                $(HTMLProjects[i].getText().parent().children()[1]).animate({opacity: 1}, 750);
-                // continue;
-        }
+        var middle_of_window = $(window).scrollTop() + $(window).height()/2;
 
-               
+        if( middle_of_window > top_of_object && middle_of_window < bottom_of_object){
+            
+            HTMLProjects[i].getText().animate({'opacity':'1'},500);
+            $(HTMLProjects[i].getText().parent().children()[1]).animate({'opacity': '1'}, 500);
+        }else if (!inView(top_of_object, bottom_of_object) ){
+
+            HTMLProjects[i].getText().css({'opacity': '0'});
+            $(HTMLProjects[i].getText().parent().children()[1]).css({'opacity': '0'});
+
+        }
     }    
 
     for (var i = 0; i < HTMLProjects.length; i++){
     	for (var j = 0; j < HTMLProjects[i].getImages().length; j++){
-            if (i == 1 && j == 0){
-                continue;
-            }
-            if (HTMLProjects[i].getImages()[j].css('opacity') != 0 &&
-                ((scroll + $('body').height() + 500)< HTMLProjects[i].getImages()[j].offset().top || (scroll - 500) > (HTMLProjects[i].getImages()[j].offset().top + HTMLProjects[i].getImages()[j].height()))) {
-                    HTMLProjects[i].getImages()[j].css({'opacity': 0}); 
-                    continue;       
-            }
-    		if (HTMLProjects[i].getImages()[j].css('opacity') != 1 &&
-    			scroll + $('body').height() > HTMLProjects[i].getImages()[j].offset().top + $('body').height()/2) {
-    				HTMLProjects[i].getImages()[j].animate({opacity: 1}, 750);
-                    // continue;
-    				
-			}
 
-            
+            var top_of_object = HTMLProjects[i].getImages()[j].offset().top;
+            var bottom_of_object = HTMLProjects[i].getImages()[j].offset().top + HTMLProjects[i].getImages()[j].outerHeight(true);
+            var middle_of_window = $(window).scrollTop() + $(window).height()/2;
+
+            if( HTMLProjects[i].getImages()[j].css('opacity') != 1 && middle_of_window > top_of_object && middle_of_window < bottom_of_object ){
+                
+                HTMLProjects[i].getImages()[j].animate({'opacity':'1'},500);
+                    
+            }else if (!inView(top_of_object, bottom_of_object) ){
+
+                HTMLProjects[i].getImages()[j].css({'opacity': '0'}); 
+
+            }
     	}
     }
 }
