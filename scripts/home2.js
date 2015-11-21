@@ -147,8 +147,8 @@ function handleOpacity (e){
         console.log(HTMLProjects[i].getText().offset().top);
         if (HTMLProjects[i].getText().css('opacity') != 0 &&
             ((scroll + $('body').height() + 500) < HTMLProjects[i].getText().offset().top || (scroll - 500) > (HTMLProjects[i].getText().offset().top + HTMLProjects[i].getText().height()))) {
-                HTMLProjects[i].getText().animate({opacity: 0}, 0);  
-                $(HTMLProjects[i].getText().parent().children()[1]).animate({opacity: 0}, 0); 
+                HTMLProjects[i].getText().css({'opacity': 0});  
+                $(HTMLProjects[i].getText().parent().children()[1]).css({'opacity': 0}); 
                 continue;
         }
 
@@ -169,7 +169,7 @@ function handleOpacity (e){
             }
             if (HTMLProjects[i].getImages()[j].css('opacity') != 0 &&
                 ((scroll + $('body').height() + 500)< HTMLProjects[i].getImages()[j].offset().top || (scroll - 500) > (HTMLProjects[i].getImages()[j].offset().top + HTMLProjects[i].getImages()[j].height()))) {
-                    HTMLProjects[i].getImages()[j].animate({opacity: 0}, 0);
+                    HTMLProjects[i].getImages()[j].css({'opacity': 0}); 
                     continue;       
             }
     		if (HTMLProjects[i].getImages()[j].css('opacity') != 1 &&
@@ -205,10 +205,11 @@ $('body').on({
     	}
     	if (!handleInfScroll(scroll)){
     		// checkFocus(e);
+            handleOpacity(e);
     	}
 
     	handleBackground(e);
-    	handleOpacity(e);
+    	
     }
 });
 
