@@ -162,10 +162,15 @@ function handleOpacity (e){
 
         var middle_of_window = $(window).scrollTop() + $(window).height()/2;
 
-        if( middle_of_window > top_of_object && middle_of_window < bottom_of_object){
-            
+        if( HTMLProjects[i].getText().css('opacity') == 0 && middle_of_window > top_of_object && middle_of_window < bottom_of_object){
+            // if (HTMLProjects[i].getText().css('opacity') == 0){
+                console.log("textfade");
+                handleBackground(e);
+            // }
             HTMLProjects[i].getText().animate({'opacity':'1'},500);
             $(HTMLProjects[i].getText().parent().children()[1]).animate({'opacity': '1'}, 500);
+
+            
         }else if (!inView(top_of_object, bottom_of_object) ){
 
             HTMLProjects[i].getText().css({'opacity': '0'});
@@ -222,7 +227,7 @@ $('body').on({
             HTMLProjects[1].getImages()[0].animate({opacity: 1}, 750);
         }
 
-    	handleBackground(e);
+    	
     	
     }
 });
