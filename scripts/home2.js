@@ -184,7 +184,7 @@ function handleOpacity (){
             $("#about-close div").css('background-color' , HTMLProjects[i].getBg());
             $("#about-wrap p a").css('color' , HTMLProjects[i].getBg());
             $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getBg());
-            $("#about-overlay").css('background-color' , HTMLProjects[i].getBg());
+            $("#about-overlay").css('background-color' , HTMLProjects[i].getTextColour());
             $(".project-description a").css({
                 'color' : HTMLProjects[i].getTextColour(),
                 'border-bottom-color' : HTMLProjects[i].getTextColour()});
@@ -215,13 +215,10 @@ function handleOpacity (){
                 HTMLProjects[i].getImages()[j].animate({'opacity':'1', 'margin-top':'0%'},1000);
                 
                     
-            }else if (lastScroll > scroll && upper_of_window > top_of_object && upper_of_window < bottom_of_object){
+            } else if (lastScroll > scroll && upper_of_window > top_of_object && upper_of_window < bottom_of_object){
                 if (j == HTMLProjects[i].getImages().length-1){
                     //upscroll
                     $("body").css('background-color' , HTMLProjects[i].getBg());
-                    plane.material.color.setHex("0x"+HTMLProjects[i].getTextColour().substring(1,HTMLProjects[i].getTextColour().length));
-                    renderer.setClearColor(HTMLProjects[i].getBg(), 1);
-                    scene.fog.color.setHex("0x"+HTMLProjects[i].getBg().substring(1,HTMLProjects[i].getBg().length));
                     $(".project-title").css('color' , HTMLProjects[i].getTextColour());
                     $("aside").css('color' , HTMLProjects[i].getTextColour());
                     $(".logo svg").css('fill' , HTMLProjects[i].getTextColour());
@@ -230,7 +227,7 @@ function handleOpacity (){
                     $("#about-close div").css('background-color' , HTMLProjects[i].getBg());
                     $("#about-wrap p a").css('color' , HTMLProjects[i].getBg());
                     $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getBg());
-                    $("#about-overlay").css('background-color' , HTMLProjects[i].getBg());
+                    $("#about-overlay").css('background-color' , HTMLProjects[i].getTextColour());
                     $(".project-description a").css({
                         'color' : HTMLProjects[i].getTextColour(),
                         'border-bottom-color' : HTMLProjects[i].getTextColour()});
@@ -347,14 +344,10 @@ function main(){
     $("#about-close div").css('background-color' , HTMLProjects[1].getBg());
     $("#about-wrap p a").css('color' , HTMLProjects[1].getBg());
     $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[1].getBg());
-    $("#about-overlay").css('background-color' , HTMLProjects[1].getBg());
+    $("#about-overlay").css('background-color' , HTMLProjects[1].getTextColour());
     $(".project-description a").css({
         'color' : HTMLProjects[1].getTextColour(),
         'border-bottom-color' : HTMLProjects[1].getTextColour()});
-
-    plane.material.color.setHex("0x"+HTMLProjects[1].getTextColour().substring(1,HTMLProjects[1].getTextColour().length));
-    renderer.setClearColor(HTMLProjects[1].getBg(), 1);
-    scene.fog.color.setHex("0x"+HTMLProjects[1].getBg().substring(1,HTMLProjects[1].getBg().length));
 
     $( document ).ready(function() {
 

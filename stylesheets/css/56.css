@@ -348,13 +348,9 @@ aside {
 #about-wrap {
 	text-align: left;
 	display:inline-block;
-	max-width: 800px;
-	margin: auto 50px;
-	font-size: 40px;
+	max-width: 1200px;
+	margin: 100px 100px;
 	color: white;
-	letter-spacing:-1px;
-	font-weight: 300;
-	line-height: 140%;
 		-webkit-transition: color 1000ms linear;
 	  /*-moz-transition: color 1000ms linear;*/
 /*	  -o-transition: color 1000ms linear;
@@ -366,7 +362,7 @@ aside {
 	font-family: 'America XIX';
 }
 
-#about-wrap p a {
+#about-wrap {
 	color: white;
 	border-bottom: 1px solid white;
 		-webkit-transition: color 1000ms linear;
@@ -374,6 +370,37 @@ aside {
 	  -o-transition: color 1000ms linear;
 	  -ms-transition: color 1000ms linear;*/
   transition: color 1000ms linear;
+}
+
+#abt-top {
+	font-size: 80px;
+	line-height: 130%;
+}
+
+#abt-info-wrap {
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+}
+
+.abt-info {
+	/*height: 300px;*/
+	/*width: 300px;*/
+	/*text-align: center;*/
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+}
+
+.abt-info-title {
+	flex-grow:3;
+	width: 100%;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+.abt-info-spec {
+	flex-grow: 1;
 }
 
 #featured {
@@ -431,6 +458,13 @@ aside {
 
 	.project-img {
 		margin: 8vw 0;
+	}
+
+	nav { 
+		bottom: 0;
+		top: 20px;
+		left: inherit;
+		right: 30px;
 	}
 }
 
