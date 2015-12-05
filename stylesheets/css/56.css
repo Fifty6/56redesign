@@ -383,7 +383,7 @@ aside {
 	flex-grow: 1;
 	flex-wrap: wrap;
 	margin: 100px 0;
-	max-width: 300px;
+	max-width: 320px;
 	height: 100px;
 }
 
@@ -396,7 +396,9 @@ aside {
 
 .abt-info-spec {
 	flex-grow: 1;
-	min-width:150px;
+	min-width:160px;
+	margin-bottom: 6px;
+	font-family: 'Work Sans';
 }
 
 #featured {
@@ -410,7 +412,7 @@ aside {
 	-webkit-filter: blur(10px);
 	filter: blur(10px);
 }*/
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1150px) {
 	#abt-info-wrap {
 		flex-direction: column;
 		justify-content: center;
@@ -419,6 +421,10 @@ aside {
 	.abt-info {
 		margin: 40px auto;
 		height: auto;
+	}
+
+	.abt-info:first-of-type {
+		margin-top: 100px;
 	}
 }
 
@@ -466,13 +472,25 @@ aside {
 		left: inherit;
 		right: 30px;
 	}
-}
 
-@media screen and (max-width: 750px) {
-	#about-wrap {
-		font-size: 25px;
+	#about-close {
+		bottom: 0;
+		top: 20px;
+		left: inherit;
+		right: 30px;
 	}
 }
+
+@media screen and (max-width: 850px) {
+	#abt-top {
+		font-size: 3em;
+	}
+
+	.abt-info-title {
+		font-size: 3em;
+	}
+}
+
 
 @media screen and (max-width:700px) {
 
@@ -488,15 +506,14 @@ aside {
 	}
 }
 
-@media screen and (max-height: 550px) {
-	#talk2us{
-		display: none;
+@media screen and (max-width: 650px) {
+	#about-wrap {
+		margin: 50px 40px;
 	}
 }
 
-@media screen and (max-width: 520px) {
-	#about-wrap {
-		font-size: 22px;
-		margin: auto 30px;
+@media screen and (max-height: 550px) {
+	#talk2us{
+		display: none;
 	}
 }
