@@ -362,25 +362,17 @@ aside {
 	font-family: 'America XIX';
 }
 
-#about-wrap {
-	color: white;
-	border-bottom: 1px solid white;
-		-webkit-transition: color 1000ms linear;
-/*	  -moz-transition: color 1000ms linear;
-	  -o-transition: color 1000ms linear;
-	  -ms-transition: color 1000ms linear;*/
-  transition: color 1000ms linear;
-}
-
 #abt-top {
-	font-size: 80px;
+	font-size: 5em;
 	line-height: 130%;
 }
 
 #abt-info-wrap {
 	display: flex;
 	flex-direction: row;
-	margin-top: 100px;
+	margin-top: 20px;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .abt-info {
@@ -390,17 +382,21 @@ aside {
 	display: flex;
 	flex-grow: 1;
 	flex-wrap: wrap;
+	margin: 100px 0;
+	max-width: 300px;
+	height: 100px;
 }
 
 .abt-info-title {
 	flex-grow:3;
 	width: 100%;
-	font-size: 80px;
+	font-size: 5em;
 	margin-bottom: 30px;
 }
 
 .abt-info-spec {
 	flex-grow: 1;
+	min-width:150px;
 }
 
 #featured {
@@ -414,11 +410,15 @@ aside {
 	-webkit-filter: blur(10px);
 	filter: blur(10px);
 }*/
+@media screen and (max-width:1100px) {
+	#abt-info-wrap {
+		flex-direction: column;
+		justify-content: center;
+	}
 
-@media screen and (max-width: 950px) {
-	#about-wrap {
-		font-size:40px;
-		padding-bottom: 45px;
+	.abt-info {
+		margin: 40px auto;
+		height: auto;
 	}
 }
 

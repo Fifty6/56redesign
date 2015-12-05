@@ -183,7 +183,7 @@ function handleOpacity (){
             $("#about-wrap").css('color' , HTMLProjects[i].getBg());
             $("#about-close div").css('background-color' , HTMLProjects[i].getBg());
             $("#about-wrap p a").css('color' , HTMLProjects[i].getBg());
-            $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getBg());
+            // $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getBg());
             $("#about-overlay").css('background-color' , HTMLProjects[i].getTextColour());
             $(".project-description a").css({
                 'color' : HTMLProjects[i].getTextColour(),
@@ -226,7 +226,7 @@ function handleOpacity (){
                     $("#about-wrap").css('color' , HTMLProjects[i].getBg());
                     $("#about-close div").css('background-color' , HTMLProjects[i].getBg());
                     $("#about-wrap p a").css('color' , HTMLProjects[i].getBg());
-                    $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getBg());
+                    // $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getBg());
                     $("#about-overlay").css('background-color' , HTMLProjects[i].getTextColour());
                     $(".project-description a").css({
                         'color' : HTMLProjects[i].getTextColour(),
@@ -343,7 +343,7 @@ function main(){
     $("#about-wrap").css('color' , HTMLProjects[1].getBg());
     $("#about-close div").css('background-color' , HTMLProjects[1].getBg());
     $("#about-wrap p a").css('color' , HTMLProjects[1].getBg());
-    $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[1].getBg());
+    // $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[1].getBg());
     $("#about-overlay").css('background-color' , HTMLProjects[1].getTextColour());
     $(".project-description a").css({
         'color' : HTMLProjects[1].getTextColour(),
