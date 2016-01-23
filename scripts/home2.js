@@ -153,12 +153,28 @@ function inView (top, bottom){
     return false;
 }
 
+function changeColor(project) {
+    $("body").css('background-color' , project.getBg());
+    $(".project-title").css('color' , project.getTextColour());
+    $("aside").css('color' , project.getTextColour());
+    $(".logo svg").css('fill' , project.getTextColour());
+    $(".info").css('color' , project.getTextColour());
+    $("#about-wrap").css('color' , project.getBg());
+    $("#about-close div").css('background-color' , project.getBg());
+    $("#about-wrap p a").css('color' , project.getBg());
+    // $("#about-wrap p a").css('border-bottom-color' , project.getBg());
+    $("#about-overlay").css('background-color' , project.getTextColour());
+    $(".project-description a").css({
+        'color' : project.getTextColour(),
+        'border-bottom-color' : project.getTextColour()}); 
+}
+
 function handleOpacity (){
 
     for (var i = 0; i < HTMLProjects.length; i++){
         
         var top_of_object = HTMLProjects[i].getText().offset().top;
-        var bottom_of_object = top_of_object + HTMLProjects[i].getText().outerHeight(true);
+        var bottom_of_object = top_of_object + HTMLProjects[i].getHeight();
 
         var middle_of_window = $(window).scrollTop() + $(window).height()*0.7;
         var upper_of_window = $(window).scrollTop() + $(window).height()*0.3;
@@ -172,24 +188,14 @@ function handleOpacity (){
                 $(HTMLProjects[i].getText().parent().children()[1]).animate({'opacity': '1', 'margin-top':'0%'}, 1000);
             }
 
-            $("body").css('background-color' , HTMLProjects[i].getBg());
-            $(".project-title").css('color' , HTMLProjects[i].getTextColour());
-            $("aside").css('color' , HTMLProjects[i].getTextColour());
-            $(".logo svg").css('fill' , HTMLProjects[i].getTextColour());
-            $(".info").css('color' , HTMLProjects[i].getTextColour());
-            $("#about-wrap").css('color' , HTMLProjects[i].getBg());
-            $("#about-close div").css('background-color' , HTMLProjects[i].getBg());
-            $("#about-wrap p a").css('color' , HTMLProjects[i].getBg());
-            // $("#about-wrap p a").css('border-bottom-color' , HTMLProjects[i].getBg());
-            $("#about-overlay").css('background-color' , HTMLProjects[i].getTextColour());
-            $(".project-description a").css({
-                'color' : HTMLProjects[i].getTextColour(),
-                'border-bottom-color' : HTMLProjects[i].getTextColour()});
+            changeColor(HTMLProjects[i]);
 
         }else if (lastScroll > scroll && HTMLProjects[i].getText().css('opacity') == 0 && upper_of_window > top_of_object && upper_of_window < bottom_of_object){
 
             HTMLProjects[i].getText().animate({'opacity':'1'},1000);
             $(HTMLProjects[i].getText().parent().children()[1]).animate({'opacity': '1'}, 1000);
+
+            changeColor(HTMLProjects[i]);
         }else if (!inView(top_of_object, bottom_of_object) ){
 
             HTMLProjects[i].getText().css({'opacity': '0'});

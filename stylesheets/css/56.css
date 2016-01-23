@@ -164,7 +164,7 @@ a {
 	opacity: 0;
 	position: relative;
 	padding-top: 120px;
-  transition: color 200ms linear;
+  	transition: color 200ms linear;
 	line-height: 440%;
 }
 
@@ -402,6 +402,51 @@ aside {
 	-webkit-filter: blur(10px);
 	filter: blur(10px);
 }*/
+
+/* for screens wider than 1150px */
+@media screen and (min-width:1150px) {
+	.scrolling-content {
+		max-width: 100%;
+	}
+
+	.project-container {
+		max-width: 50%;
+		font-size: 3em;
+		line-height: 1.4em;
+	}
+
+	.project-title {
+		font-size: inherit;
+		line-height: inherit;
+	}
+
+	.project-title .title {
+		font-size: inherit;
+	}
+
+	.project-title .subtitle {
+		font-size: inherit;
+	}
+
+	.project-description {
+		font-size: .5em;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	#about-wrap {
+		margin: 8% 100px;
+	}
+}
+
+/*@media screen and (min-width: 1800px) {
+	#about-wrap {
+		margin: 8% 100px;
+	}
+}*/
+
+
+
 @media screen and (max-width:1150px) {
 	#abt-info-wrap {
 		-webkit-flex-direction: column;
